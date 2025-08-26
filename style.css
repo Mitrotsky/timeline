@@ -1,0 +1,43 @@
+* {
+  font-family: "system-ui";
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  font-weight: bold;
+}
+
+em {
+  background: antiquewhite;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+hr {
+  border-color: antiquewhite;
+  border-style: dotted;
+}
+
+tr:nth-of-type(even), thead tr {
+  background: rgba(245, 245, 220, 0.5);
+}
+
+th, td {
+  padding: 0.3rem 0.5rem;
+}
+
+colgroup {
+  .year {
+    background-color: rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+  }
+  .mem {
+    background-color: rgba(119, 0, 153, 0.1);
+  }
+  .epi {
+    background-color: rgba(0, 136, 136, 0.1);
+  }
+}
