@@ -30,6 +30,24 @@ th, td {
 }
 
 table {
+  caption {
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+
+  colgroup {
+    .year {
+      background-color: rgba(0, 0, 0, 0.05);
+      font-weight: bold;
+    }
+    .mem {
+      background-color: rgba(119, 0, 153, 0.1);
+    }
+    .epi {
+      background-color: rgba(0, 136, 136, 0.1);
+    }
+  }
+
   td a {
     text-transform: uppercase;
     transition: all 0.3s;
@@ -54,19 +72,6 @@ table {
     &:hover {
       background-color: #707;
     }
-  }
-}
-
-colgroup {
-  .year {
-    background-color: rgba(0, 0, 0, 0.05);
-    font-weight: bold;
-  }
-  .mem {
-    background-color: rgba(119, 0, 153, 0.1);
-  }
-  .epi {
-    background-color: rgba(0, 136, 136, 0.1);
   }
 }
 

@@ -52,8 +52,8 @@ window.onload = () => {
         t = t.replace("%b", storyObj.epi ?? "");
         t = t.replace("%c", storyObj.gen ?? "");
         t = t.replace("%d", storyObj.mem ?? "");
-        t = t.replace("<<", "«");
-        t = t.replace(">>", "»");
+        t = t.replaceAll("<<", "«");
+        t = t.replaceAll(">>", "»");
         t = textToLink(t);
         t = textToBoldEmphasis(t);
         t = textToBold(t);
@@ -63,11 +63,11 @@ window.onload = () => {
 
     makeStory({
         year: "1937",
-        gen: "Первое зафиксированное событие типа <<ИНФОШТОРМ>>.",
+        gen: "Первое зафиксированное событие типа *<<ИНФОШТОРМ>>*.",
     });
     makeStory({
         year: "1938",
-        gen: "Инициация проекта <<ОПИУМ>> — проекта борьбы с принципиально новым типом аномалий — инфоугрозами.",
+        gen: "Инициация проекта *<<ОПИУМ>>* — проекта борьбы с принципиально новым типом аномалий — инфоугрозами.",
     });
     makeStory({
         year: "1951",
