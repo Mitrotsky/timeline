@@ -69,3 +69,15 @@ colgroup {
     background-color: rgba(0, 136, 136, 0.1);
   }
 }
+
+div#wrapper {
+  --scale: 1;
+  --offset: calc(-50% * ((1 / var(--scale)) - 1));
+  transform: scale(var(--scale)) translate(var(--offset), var(--offset));
+}
+
+@media screen and (max-width: 800px) {
+  div#wrapper {
+    --scale: 0.75;
+  }
+}
