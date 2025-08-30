@@ -51,6 +51,7 @@ table {
   td a {
     text-transform: uppercase;
     transition: all 0.3s;
+    padding-inline: 0.2rem;
     &:hover {
       color: white !important;
     }
@@ -61,7 +62,7 @@ table {
       background-color: #088;
     }
   }
-  td:nth-child(2) a {
+  td:nth-child(3) a {
     color: #333;
     &:hover {
       background-color: #333;
